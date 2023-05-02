@@ -1,4 +1,16 @@
 {
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "backend of to app",
+  "main":"index.js",
+  "engines": {
+    "node":"14.x"
+  },
+
+  "scripts": {
+    "start": "node index.js"
+  },
+
   "dependencies": {
     "bcrypt": "^5.1.0",
     "bcryptjs": "^2.4.3",

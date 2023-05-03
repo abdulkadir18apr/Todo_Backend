@@ -3,7 +3,7 @@ const mongooseURI = process.env.MONGO_DB_CONNECTION;
 mongoose.set('strictQuery', false);
 
 const connectToMongo = async () => {
-    mongoose.connect(mongooseURI,{
+    const conn=await mongoose.connect(mongooseURI,{
         useNewUrlParser:true,
         useUnifiedTopology:true
     }).then(()=>console.log("connected")).catch((err)=>console.log(err))
